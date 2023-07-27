@@ -5,9 +5,11 @@ console.log("Scelta dell'utente: " + sceltaUtente);
 
 // creo un valore "pari"
 const sceltaPari = "pari";
+console.log(sceltaPari);
 
 // creo un valore "dispari"
 const sceltaDispari = "dispari";
+console.log(sceltaDispari);
 
 // TODO COSA FARE SE MI SCRIVE ALTRE PAROLE
 
@@ -20,3 +22,11 @@ console.log("Numero dell'utente: " + numeroUtente);
 
 const numeroCasuale = numberRandomGenerator();
 console.log("Numero casuale Generato: " + numeroCasuale);
+
+// Sommo i due numeri
+const somma = numeroUtente + numeroCasuale;
+console.log("Somma dei numeri: " + somma);
+
+// Stampo il vincitore
+const winner = risultatoVincitore();
+console.log(winner);

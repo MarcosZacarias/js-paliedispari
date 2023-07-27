@@ -5,18 +5,21 @@ function numberRandomGenerator() {
   return numeroCasuale;
 }
 
-// Sommo i due numeri
-
-// "somma" = "numero utente" + "numero casuale"
 // SE
-
-// "scelta utente" = "pari" e "somma" è pari (somma divisibile per 2)
-
-// O
-
-// "scelta utente" = "dispari" e "somma" è dispari (somma non divisibile per 2)
-
-// Stampo "il vincitore è l'utente"
-// ALTRIMENTI
-
-// Stampo "il vincitore è il computer"
+function risultatoVincitore() {
+  let winner;
+  if (
+    // "scelta utente" = "pari" e "somma" è pari (somma divisibile per 2)
+    (sceltaUtente === sceltaPari && somma % 2 == 0) || // O
+    // "scelta utente" = "dispari" e "somma" è dispari (somma non divisibile per 2)
+    (sceltaUtente === sceltaDispari && !(somma % 2 == 0))
+  ) {
+    // Stampo "il vincitore è l'utente"
+    winner = "Il vincitore è l'utente";
+  } else {
+    // ALTRIMENTI
+    // Stampo "il vincitore è il computer"
+    winner = "Il Vincitore è il computer";
+  }
+  return winner;
+}
